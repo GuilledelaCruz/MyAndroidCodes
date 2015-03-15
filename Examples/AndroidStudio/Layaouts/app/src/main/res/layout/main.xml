@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".Main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:id="@+id/buttonframe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Frame Layout"
+            android:layout_margin="16dp"/>
+
+        <Button
+            android:id="@+id/buttonlinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Linear Layout"
+            android:layout_margin="16dp"/>
+
+        <Button
+            android:id="@+id/buttontable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Table Layout"
+            android:layout_margin="16dp"/>
+
+        <Button
+            android:id="@+id/buttongrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grid Layout"
+            android:layout_margin="16dp"/>
+
+        <Button
+            android:id="@+id/buttonrelative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Relative Layout"
+            android:layout_margin="16dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
