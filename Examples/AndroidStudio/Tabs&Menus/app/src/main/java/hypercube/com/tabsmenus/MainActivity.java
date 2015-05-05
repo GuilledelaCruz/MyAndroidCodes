@@ -3,6 +3,7 @@ package hypercube.com.tabsmenus;
 import android.content.res.Resources;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TabHost;
@@ -59,6 +60,22 @@ public class MainActivity extends ActionBarActivity {
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
+        }
+    }
+
+    public boolean onKeyDown(int keyCode, KeyEvent event){
+
+        //1a forma
+        if(keyCode == KeyEvent.KEYCODE_BACK){
+            finish();
+            return true;
+        }
+
+        //2a forma
+        switch (keyCode) {
+            case KeyEvent.KEYCODE_BACK:
+                finish(); return true;
+            default: return false;
         }
     }
 }
